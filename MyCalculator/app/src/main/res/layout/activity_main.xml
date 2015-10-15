@@ -1,0 +1,237 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/screen_bg"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="5 x 20 : 5"
+            android:id="@+id/textViewScreen1"
+            android:textColor="@color/screen_text2"
+            android:textSize="20dp"
+            android:gravity="right"
+            android:paddingLeft="6dp"
+            android:paddingTop="6dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="3.45678"
+            android:id="@+id/textViewScreen2"
+            android:textColor="@color/screen_text1"
+            android:textSize="38dp"
+            android:gravity="center_vertical|right"
+            android:paddingLeft="6dp"
+            android:paddingTop="6dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="6dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="C"
+            android:id="@+id/button_c"
+            style="@style/button_1" />
+
+        <Button
+            style="@style/button_1"
+            android:text="%"
+            android:id="@+id/button_mod" />
+
+        <Button
+            style="@style/button_1"
+            android:text="DEL"
+            android:id="@+id/button_del"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            style="@style/frame_button">
+
+            <Button
+                android:text="7"
+                android:id="@+id/button7"
+                style="@style/button_2"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <FrameLayout
+            style="@style/frame_button">
+            <Button
+                style="@style/button_2"
+                android:text="8"
+                android:id="@+id/button8" />
+        </FrameLayout>
+
+        <FrameLayout
+            style="@style/frame_button">
+
+            <Button
+                style="@style/button_2"
+                android:text="9"
+                android:id="@+id/button9"/>
+        </FrameLayout>
+
+        <FrameLayout
+            style="@style/frame_button">
+
+            <Button
+                style="@style/button_3"
+                android:text="/"
+                android:id="@+id/button_bagi"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            style="@style/frame_button">
+
+            <Button
+                style="@style/button_2"
+                android:text="4"
+                android:id="@+id/button4" />
+        </FrameLayout>
+
+        <FrameLayout
+            style="@style/frame_button">
+
+            <Button
+                style="@style/button_2"
+                android:text="5"
+                android:id="@+id/button5"/>
+        </FrameLayout>
+
+        <FrameLayout
+            style="@style/frame_button">
+
+            <Button
+                style="@style/button_2"
+                android:text="6"
+                android:id="@+id/button6"/>
+        </FrameLayout>
+
+        <FrameLayout
+            style="@style/frame_button">
+
+            <Button
+                style="@style/button_3"
+                android:text="x"
+                android:id="@+id/button_kali" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <FrameLayout
+            style="@style/frame_button">
+
+            <Button
+                style="@style/button_2"
+                android:text="1"
+                android:id="@+id/button1" />
+        </FrameLayout>
+
+        <FrameLayout
+            style="@style/frame_button">
+
+            <Button
+                style="@style/button_2"
+                android:text="2"
+                android:id="@+id/button2"/>
+        </FrameLayout>
+
+        <FrameLayout
+            style="@style/frame_button">
+
+            <Button
+                style="@style/button_2"
+                android:text="3"
+                android:id="@+id/button3"/>
+        </FrameLayout>
+
+        <FrameLayout
+            style="@style/frame_button">
+
+            <Button
+                style="@style/button_3"
+                android:text="-"
+                android:id="@+id/button_kurang"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <FrameLayout
+            style="@style/frame_button">
+
+            <Button
+                style="@style/button_2"
+                android:text="0"
+                android:id="@+id/button0" />
+        </FrameLayout>
+
+        <FrameLayout
+            style="@style/frame_button">
+
+            <Button
+                style="@style/button_2"
+                android:text="."
+                android:id="@+id/button_koma"/>
+        </FrameLayout>
+
+        <FrameLayout
+            style="@style/frame_button">
+
+            <Button
+                style="@style/button_4"
+                android:text="="
+                android:id="@+id/button_sama_dengan" />
+        </FrameLayout>
+
+        <FrameLayout
+            style="@style/frame_button">
+
+            <Button
+                style="@style/button_3"
+                android:text="+"
+                android:id="@+id/button_tambah" />
+        </FrameLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
